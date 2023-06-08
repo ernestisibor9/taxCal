@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<style>
+    .players {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 100px;
+    }
+</style>
+
+<body>
+
+    <h1>Image Gallery</h1>
+
+    <div class="filter-box">
+        <button class="btn btn-primary active" data-filter="all">
+            All
+        </button>
+        <button class="btn btn-success active" data-filter="benzema">
+            Benzema
+        </button>
+        <button class="btn btn-warning active" data-filter="ronaldo">
+            Ronaldo
+        </button>
+        <button class="btn btn-danger active" data-filter="messi">
+            Messi
+        </button>
+        <button class="btn btn-info active" data-filter="neymar">
+            Neymar
+        </button>
+    </div>
+
+    <div>
+        <input type="text" name="" id="search" placeholder="search" class="form-control mt-3">
+    </div>
+
+    <div class="players">
+
+        <div class="player benzema" data-aos="zoom-in-left" data-aos-duration="2000">
+            <img src="../images/benzema.jpeg" alt="" class="benzema">
+            <h5 class="text-center">Benzema</h5>
+        </div>
+        <div class="player ronaldo" data-aos="zoom-in-left" data-aos-duration="2000">
+            <img src="../images/cronaldo.jpeg" alt="" class="ronaldo">
+            <h5 class="text-center">Ronaldo</h5>
+        </div>
+        <div class="player messi" data-aos="zoom-in-left" data-aos-duration="2000">
+            <img src="../images/messi.jpeg" alt="" class="messi">
+            <h5 class="text-center">Messi</h5>
+        </div>
+        <div class="player neymar" data-aos="zoom-in-left" data-aos-duration="2000">
+            <img src="../images/neymar.jpeg" alt="" class="neymar">
+            <h5 class="text-center">Neymar</h5>
+        </div>
+
+
+        <!-- <img src="../images/benzema.jpeg" alt="" class="benzema player">
+        <img src="../images/cronaldo.jpeg" alt="" class="ronaldo player">
+        <img src="../images/messi.jpeg" alt="" class="messi player">
+        <img src="../images/neymar.jpeg" alt="" class="neymar player"> -->
+    </div>
+
+    <script src="gala.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

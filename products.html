@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<style>
+    body {
+        background-color: yellow;
+    }
+
+    .active {
+        background-color: red !important;
+        color: #fff !important;
+    }
+</style>
+
+<body>
+    <h1>Product Filters</h1>
+
+    <div class="text-center m-3 filterBtn">
+        <span class="btn fw-bold active" data-filter="all">All</span>
+        <span class="btn fw-bold" data-filter="laptop">Laptop</span>
+        <span class="btn fw-bold" data-filter="phone">Phone</span>
+        <span class="btn fw-bold" data-filter="shirt">Shirt</span>
+        <span class="btn fw-bold" data-filter="trousers">Trousers</span>
+        <span class="btn fw-bold" data-filter="shoe">Shoe</span>
+        <span class="btn fw-bold" data-filter="bag">Bag</span>
+    </div>
+
+    <div class="container">
+        <div class="row products gy-4">
+            <div class="col-md-3">
+                <div class="card shadow laptop">
+                    <div class="card-body">
+                        <img src="./products/laptop1.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card shadow laptop">
+                    <div class="card-body">
+                        <img src="./products/laptop2.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card shadow phone">
+                    <div class="card-body">
+                        <img src="./products/phone1.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card shadow phone">
+                    <div class="card-body">
+                        <img src="./products/phone2.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 shirt">
+                <div class="card shadow shirt">
+                    <div class="card-body">
+                        <img src="./products/shirt1.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 shirt">
+                <div class="card shadow shirt">
+                    <div class="card-body">
+                        <img src="./products/shirt2.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 tous">
+                <div class="card shadow trousers">
+                    <div class="card-body">
+                        <img src="./products/troussier1.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card shadow trousers">
+                    <div class="card-body">
+                        <img src="./products/troussuer2.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card shadow shoe">
+                    <div class="card-body">
+                        <img src="./products/shoe1.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card shadow shoe">
+                    <div class="card-body">
+                        <img src="./products/shoe2.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card shadow bag">
+                    <div class="card-body">
+                        <img src="./products/bag1.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card shadow bag">
+                    <div class="card-body">
+                        <img src="./products/bag2.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="products.js"></script>
+</body>
+
+</html>

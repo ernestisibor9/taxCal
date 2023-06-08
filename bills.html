@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .error {
+        display: none;
+        color: red;
+        font-weight: bold;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+</style>
+
+<body>
+
+    <h1>TAXATION</h1>
+    <div>
+        <form action="">
+            <input type="text" name="" id="gross" placeholder="Gross Income"> <br><br>
+            <select name="" id="company">
+                <option value="">Select companies</option>
+                <option value="microsoft">Microsoft</option>
+                <option value="google">Google</option>
+                <option value="devnaija">DevNaija</option>
+            </select> <br><br>
+            <select name="" id="rate">
+                <option value="0">Select Tax Rate</option>
+                <option value="0.2">20% - Microsoft</option>
+                <option value="0.15">15% - Google</option>
+                <option value="0.02">2% - DevNaija</option>
+            </select>
+            <br><br>
+            <button type="submit" id="calculations">Calculate</button>
+            <div>
+                <h5 class="error">Please fill the required fields</h5>
+            </div>
+            <div>
+                <h4 class="pay">Tax Payable: </h4>
+            </div>
+        </form>
+    </div>
+
+    <script src="bills.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Multiplication Time Table for 3x</h1>
+
+    <script>
+        // Create a taxation system 
+        function taxation(housing, feeding, transport) {
+            let basic = 150000
+            let myHousing = housing * basic
+            let myFeeding = feeding * basic
+            let myTransport = transport * basic
+            let totalTax = myHousing + myFeeding + myTransport
+            let gross = basic - totalTax
+            if (gross < 100000) {
+                document.write("<h1>Your workers are living abject</h1>")
+            }
+            else {
+                console.log("Your worker is a big boy");
+            }
+        }
+        taxation(0.05, 0.2, 0.15)
+    </script>
+
+</body>
+
+</html>
